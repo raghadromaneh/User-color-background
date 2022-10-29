@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "612480397155",
+    "project_id": "user-color-background",
+    "storage_bucket": "user-color-background.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612480397155:android:ae76b2b780c5a65ee4ed56",
+        "android_client_info": {
+          "package_name": "com.example.usercolorbackground"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612480397155-im5gcavr3i6s4l02bi3nmn5c1tqtcf73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkDXSpEFEa0kP9f_wuZ0hq4ysNcHRw5IU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612480397155-im5gcavr3i6s4l02bi3nmn5c1tqtcf73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
