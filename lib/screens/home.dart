@@ -13,12 +13,12 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-final userData = FirebaseFirestore.instance
-    .collection("users")
-    .doc(FirebaseAuth.instance.currentUser!.uid);
 // String? userType;
 
 class _HomeState extends State<Home> {
+  final userData = FirebaseFirestore.instance
+      .collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid);
   @override
   Widget build(BuildContext context) {
     print(FirebaseAuth.instance.currentUser!.uid);

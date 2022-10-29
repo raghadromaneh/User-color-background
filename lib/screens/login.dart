@@ -93,6 +93,8 @@ class _LoginState extends State<Login> {
                           },
                         ),
                       );
+                      nameController.clear();
+                      passwordController.clear();
                     } catch (e) {
                       Navigator.pop(context);
                       ScaffoldMessenger.of(context).showSnackBar(

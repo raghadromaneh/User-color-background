@@ -1,8 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:usercolorbackground/components/homeview.dart';
 import 'package:usercolorbackground/screens/home.dart';
 import 'package:usercolorbackground/screens/login.dart';
 
@@ -14,8 +12,12 @@ class UserProfile extends StatefulWidget {
 }
 
 class _UserProfileState extends State<UserProfile> {
+  final userData = FirebaseFirestore.instance
+      .collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid);
   @override
   Widget build(BuildContext context) {
+    print(FirebaseAuth.instance.currentUser!.uid);
     return SafeArea(
       child: Scaffold(
         body: FutureBuilder(
@@ -29,7 +31,6 @@ class _UserProfileState extends State<UserProfile> {
                 );
               }
               if (snapshot.hasData) {
-                print(snapshot.data!);
                 return Scaffold(
                   backgroundColor: Color(snapshot.data!["backgroundColor"]),
                   appBar: AppBar(
